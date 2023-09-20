@@ -1,45 +1,32 @@
-import React from 'react'
-import "./HomeScreen.css"
-import Nav from "./Nav"
-import Banner from './Banner'
-
-
+import React from "react";
+import "./HomeScreen.css";
+import Nav from "./Nav";
+import Banner from "./Banner";
+import popular from "./data/Popular";
+import horror from "./data/Horror";
+import fantasy from "./data/Fantasy";
+import upcoming from "./data/UpComing";
+import bannerMovies from "./data/BannerMovie"
+import Row from "./Row";
 function HomeScreen() {
   return (
-    <div className='homescreen'>
+    <div className="homescreen">
+      {/* navbar */}
+      <Nav />
 
-        {/* navbar */}
-        <Nav/>
-        
-        <Banner/>
-        <h1>hooo</h1>
-        <h1>{process.env.REACT_APP_API_KEY}</h1>
-       
+      <Banner />
 
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
-        <h1>head</h1>
+      {/* rows */}
+      <Row title="NETFLIX ORIGINAL" imgList={popular} isLarge={true} />
+      <Row title="Horror " imgList={horror} />
 
-        
+      <Row title="Fantasy" imgList={fantasy} />
 
-        {/* rows */}
+      <Row title="Popular" imgList={bannerMovies} />
 
+      <Row title="Upcoming..." imgList={upcoming} />
     </div>
-  )
+  );
 }
 
-export default HomeScreen
+export default HomeScreen;

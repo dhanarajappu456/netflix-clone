@@ -39,7 +39,10 @@
     top:0;
     width:100%;
     z-index: 1;
+
     transition-timing-function: ease-in;
+    /* all specifies to put trasnsition  to be applied to any of the aimatable property
+    here the change in bakground color  */
     transition: all 0.5s ;
     
 }
