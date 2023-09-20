@@ -21,7 +21,7 @@ We have big plans for this project! Stay tuned as we intend to integrate even mo
 
 ## Credits
 
-This project was crafted with ❤️ by Dhanaraj. Known as "daan" in the developer community.
+This project was crafted with ❤️ by Dhanaraj. Known as "Daan" in the developer community.
 
 ---
 
