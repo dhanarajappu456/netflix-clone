@@ -1,13 +1,13 @@
 import React from "react";
-import "./HomeScreen.css";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import popular from "./data/Popular";
-import horror from "./data/Horror";
-import fantasy from "./data/Fantasy";
-import upcoming from "./data/UpComing";
-import bannerMovies from "./data/BannerMovie"
-import Row from "./Row";
+import "../HomeScreen.css";
+import Nav from "../Nav";
+import Banner from "../Banner";
+import popular from "../data/Popular";
+import horror from "../data/Horror";
+import fantasy from "../data/Fantasy";
+import upcoming from "../data/UpComing";
+import bannerMovies from "../data/BannerMovie"
+import Row from "../Row";
 function HomeScreen() {
   return (
     <div className="homescreen">
