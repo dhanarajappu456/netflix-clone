@@ -1,6 +1,4 @@
 
-Certainly! Below is a template for the `README.md` based on the information you provided:
-
 ---
 
 # Netflix Clone
@@ -21,13 +19,13 @@ We have big plans for this project! Stay tuned as we intend to integrate even mo
 
 ## Credits
 
-This project was crafted with ❤️ by Dhanaraj. Known as "daan" in the developer community.
+This project was crafted with ❤️ by Dhanaraj. Known as "Daan" in the developer community.
 
 ---
 
 
 
-#Additional information on running  the app 
+## Additional information for  running  the app 
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
