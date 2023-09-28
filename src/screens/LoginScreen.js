@@ -17,29 +17,29 @@ function LoginScreen() {
         </button>
       </div>
 
-      <div className="loginScreen__gradient"></div>
-
-      <div className="loginScreen__body">
-        {siginIn ? (
-          <SignupScreen />
-        ) : (
-          <>
-            <h1>Unlimited films, TV progrmmmes and more...</h1>
-            <h2>Watch anywhere , anytime...</h2>
-            <h3>Ready to watch? Enter your mail to create the membership.</h3>
-            <div className="loginScreen__input">
-              <form>
-                <input type="email" placeholder="Enter mail" />
-                <button
-                  onClick={() => setSignIn(true)}
-                  className="loginScreen__GetStarted"
-                >
-                  Get Started
-                </button>
-              </form>
-            </div>
-          </>
-        )}
+      <div className="loginScreen__gradient">
+        <div className="loginScreen__body">
+          {siginIn ? (
+            <SignupScreen />
+          ) : (
+            <>
+              <h1>Unlimited films, TV progrmmmes and more...</h1>
+              <h2>Watch anywhere , anytime...</h2>
+              <h3>Ready to watch? Enter your mail to create the membership.</h3>
+              <div className="loginScreen__input">
+                <form>
+                  <input type="email" placeholder="Enter mail" />
+                  <button
+                    onClick={() => setSignIn(true)}
+                    className="loginScreen__GetStarted"
+                  >
+                    Get Started
+                  </button>
+                </form>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

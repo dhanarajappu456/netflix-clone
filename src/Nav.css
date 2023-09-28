@@ -1,55 +1,51 @@
-.nav__content{
+.nav {
+  /* adding this line make it to shorten its width to 
+      its content */
+  position: fixed;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 
-    display:  flex;
-    justify-content: space-between;
-    align-items: center;
-
+  transition-timing-function: ease-in;
+  /* all specifies to put transition  to be applied to any of the aimatable property
+      here the change in bakground color  */
+  transition: all 0.5s;
 }
 
-.nav__logo{
-    height: 40px ;
-    width: 90px;
-    
-    cursor: pointer;
-    padding-left: 20px;
-    margin-bottom: 0px;
-
-
-    /* left: 0; */
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav__avatar{
-    height: 30px ;
-    width: 30px;
-    cursor: pointer;
+.nav__logo {
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+  padding-left: 20px;
+  margin-bottom: 0px;
 
-    position: fixed;
-    right : 20px
-
-    /* left: 0; */
+  /* left: 0; */
+}
+.nav__logo:hover {
+  transform: translate(1px, 1px);
 }
 
-.nav{
+.nav__avatar {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
 
-   
-    /* adding this line make it to shorten its width to 
-    its content */
-    position:  fixed;
-    padding: 20px;
-    top:0;
-    width:100%;
-    z-index: 1;
+  position: fixed;
+  right: 20px;
 
-    transition-timing-function: ease-in;
-    /* all specifies to put trasnsition  to be applied to any of the aimatable property
-    here the change in bakground color  */
-    transition: all 0.5s ;
-    
+  /* left: 0; */
 }
-.nav__black{
+.nav__avatar:hover {
+  transform: translate(1px, 1px);
+}
 
-    background-color: #111;
-
-
-    
+.nav__black {
+  background-color: #111;
 }

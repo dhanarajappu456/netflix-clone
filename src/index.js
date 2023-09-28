@@ -5,21 +5,30 @@ import { store } from "./app/store";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import LoginScreen from "./screens/LoginScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+import Counter from "./test";
 import "./index.css";
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Routes,
   Link,
+  BrowserRouter,
 } from "react-router-dom";
+import ErrorPage from "./screens/ErrorPage";
+
 const container = document.getElementById("root");
 const root = createRoot(container);
-const router = createBrowserRouter([{ path: "/", element: <App /> },{ path: "test", element: <h1>test page</h1> },{path:"login" , element:<LoginScreen/>}]);
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      {/* <Counter /> */}
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+      {/* <RouterProvider router={router} /> */}
     </Provider>
   </React.StrictMode>
 );

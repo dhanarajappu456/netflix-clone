@@ -1,0 +1,143 @@
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideAndFade {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+}
+
+.profile__body > h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  border-bottom: 1px solid #343d34;
+  margin-bottom: 20px;
+}
+.profile__body {
+  animation: slideAndFade 0.7s;
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 18%;
+  padding-right: 10%;
+  max-width: 800px;
+}
+.profile__content {
+  display: flex;
+}
+
+.profile__content > img {
+  transform: rotate(-360deg);
+  transition: transform 0.5s;
+  height: 100px;
+  width: 100px;
+}
+
+.profile__info {
+  margin-left: 10px;
+  width: 100%;
+  flex: 1;
+  color: white;
+}
+
+.profile__info > h2 {
+  overflow-x: scroll;
+
+  background-color: gray;
+  padding: 15px;
+  font-size: 0.8em;
+  font-weight: normal;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.profile__info > h2::-webkit-scrollbar {
+  display: none;
+}
+.profile__plans > h3 {
+  border-bottom: 1px solid #343d34;
+}
+.profile__signout {
+  display: flex;
+}
+
+.profile__signout > button {
+  flex-grow: 1;
+}
+
+.profile__signout > button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #d6323a;
+  font-size: 0.8rem;
+  width: 100%;
+  background-color: red;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.profile__signout:hover {
+  transform: translate(1px, 1px);
+}
+.additional__service {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: auto; */
+}
+.additional__service > a {
+  text-decoration: none;
+  padding: 10px;
+}
+@media (max-width: 597px) {
+  .profile__body {
+    color: white;
+    padding-right: 0;
+    height: 100%;
+  }
+
+  .profile__content > img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .profile__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile__info {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .profile__signout:hover {
+    transform: translate(1px, 1px);
+  }
+}

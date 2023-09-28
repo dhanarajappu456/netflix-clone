@@ -37,6 +37,7 @@
 }
 
 .signUpScreen > form > h4 {
+  margin-top: 10px;
   text-align: left;
   font-weight: 400;
 }
